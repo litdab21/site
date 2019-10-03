@@ -20,7 +20,26 @@
 	
 	</style>
 	
-	
+			switch (day){
+			case 0: //SUNDAY
+				color = "#FFFFFF"; break; //WHITE
+			case 1: //MONDAY
+				color = "#CC0000"; break; //RED
+			case 2: //TUESDAY
+				color = "#FF9900"; break; //ORANGE
+			case 3: //WEDNESDAY
+				color = "#FFFF00"; break; //YELLOW
+			case 4: //THURSDAY
+				color = "#009900"; break; //GREEN
+			case 5: //FRIDAY
+				color = "#0066FF"; break; //BLUE
+			case 6: //SATURDAY
+				color = "#9933FF"; break; //VIOLET
+			default://END OF THE WORLD (...day that isn't part of the week? if you get here, bad things have happened.)
+				color = "#000000"; break; //BLACK
+		}
+		$("#period").css("color", color); //THESE LINES ARE FOR USE WITH jQuery.
+ 		$("#apost").css("color", color);
 	
 </head>
 <body class="bg">
